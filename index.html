@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Japan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <nav>
+        <img src="./images/logo.svg" alt="" />
+        <span>
+          <button class="btn">English</button>
+          <button class="btn btn-red">Sign in</button>
+        </span>
+      </nav>
+      <div class="box"></div>
+      <section class="hero">
+        <span class="hero-1">Unlimited movies, TV shows, and anime</span>
+        <span class="hero-2"> Watch anywhere. Cancel anytime.</span>
+        <span class="hero-3">
+          Ready to watch? Enter your email to create or restart your
+          membership.</spa>
+        <div class="buttons">
+          <input type="email" placeholder="Email address" />
+          <button class="btn btn-white">Get started</button>
+        </div>
+      </section>
+      <div class="horizontal"></div>
+    </div>
+
+    <section class="first">
+      <div class="tv">
+        <span class="span1">Enjoy on your TV</span>
+        <span class="span2">
+          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+          players, and more.</span
+        >
+      </div>
+      <div class="sectionImg">
+        <img src="./images/tv.png" alt="tv ko image" />
+        <video src="./videos/videojp1.m4v" autoplay loop muted></video>
+      </div>
+    </section>
+
+
+    <div class="horizontal"></div>
+
+    <section class="second">
+     <div class="tv">
+        <span class="span1">Watch everywhere</span>
+        <span class="span2">
+          Stream unlimited movies and TV shows on your phone,tablet,laptop,and
+          TV.</span>
+        </div>
+        <div class="sectionImg2">
+            <img src="images/device-pile-jp.png" alt="tv ko image" />
+            <video src="videos/videojp2.m4v" autoplay loop muted></video>
+          </div>
+      </section>
+
+      <div class="horizontal"></div>
+
+      <section class="third">
+        <div class="tv">
+           <span class="span1">Create profiles for kids</span>
+           <span class="span2">
+            Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+        </span>
+           </div>
+           <div class="sectionImg3">
+               <img src="images/image (3).png" alt="tv ko image" />
+             </div>
+         </section>
+    <div class="horizontal"></div>
+
+    <section class="four">
+        <div class="tv">
+           <span class="span1">Download your shows to watch offline</span>
+           <span class="span2">
+            Watch on a plane, train, or submarine...
+        </span>
+           </div>
+           <div class="sectionImg4">
+               <img src="images/image.jpg" alt="tv ko image" />
+             </div>
+         </section>
+         <div class="horizontal"></div>
+
+         <section class="five">
+        </section>
+
+
+
+        <div class="faq-section">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <div class="faq-item">What is Netflix? <span>+</span></div>
+        <div class="faq-answer">Netflix is a streaming service that offers...</div>
+
+        <div class="faq-item">Is Netflix good for kids? <span>+</span></div>
+        <div class="faq-answer">Yes, Netflix offers a variety of kid-friendly content...</div>
+
+        <div class="faq-item">How much does Netflix cost? <span>+</span></div>
+        <div class="faq-answer">The cost depends on the plan you choose...</div>
+
+        <div class="faq-item">Where can I watch? <span>+</span></div>
+        <div class="faq-answer">You can watch on any internet-connected device...</div>
+
+        <div class="faq-item">How do I cancel? <span>+</span></div>
+        <div class="faq-answer">You can cancel your subscription anytime from your account settings...</div>
+
+        <div class="faq-item">What can I watch on Netflix? <span>+</span></div>
+        <div class="faq-answer">You can watch TV shows, movies, documentaries, and more...</div>
+      </div>
+
+       <div class="faq-footer">
+        <a href="#">Questions? Contact us.</a>
+        <a href="#">FAQ</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Buy Gift Cards</a>
+        <a href="#">Cookie Preferences</a>
+        <a href="#">Speed Test</a>
+        <a href="#">Help Center</a>
+        <a href="#">Jobs</a>
+        <a href="#">Ways to Watch</a>
+        <a href="#">Corporate Information</a>
+        <a href="#">Legal Notices</a>
+        <a href="#">Account</a>
+        <a href="#">Netflix Shop</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Only on Netflix</a>
+        <a href="#">Media Center</a>
+        <a href="#">Redeem Gift Cards</a>
+        <a href="#">Privacy</a>
+       
+      </div>
+    </div>
+    </div>
+    <script>
+       const items = document.querySelectorAll('.faq-item');
+
+      items.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          const answer = item.nextElementSibling;
+          const isVisible = answer.style.display === 'block';
+          document.querySelectorAll('.faq-answer').forEach(a => (a.style.display = 'none'));
+          if (!isVisible) answer.style.display = 'block';
+        });
+      });
+    </script>
+ </body>
+</html>

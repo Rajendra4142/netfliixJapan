@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root {
+    --whitecolor: white;
+    --red-color: red;
+    --black-color: rgb(0, 0, 0);
+}
+
+body {
+    background-color: black;
+}
+
+/* url ma image 
+height 70vh view height  vw view-width
+*/
+.main {
+    background: url('./images/bg.jpg');
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+
+.main .box {
+    height: 70vh;
+    top: 0px;
+    background-color: var(--black-color);
+    position: absolute;
+    opacity: 0.7;
+    width: 100%;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    height: 60px;
+    align-items: center;
+    margin: auto;
+
+}
+
+nav img {
+    width: 135px;
+    z-index: 1;
+    position: relative;
+    /* height: 30px; */
+
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+}
+
+.btn-red {
+    background-color: var(--red-color);
+}
+
+.hero {
+    height: calc(100% - 60px);
+    color: var(--whitecolor);
+    z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 30px;
+
+}
+
+.hero-1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.hero-2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.hero-3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn-white {
+    color: white;
+    background-color: #c92b2b;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+
+
+}
+
+.buttons {
+    /* border: 1px solid red; */
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.buttons input {
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 10px 101px 8px 14px;
+    background-color: rgb(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* focus is psuedo class  */
+input:focus {
+    outline-color: red;
+}
+
+input::placeholder {
+    font-family: 'Poppins';
+    font-size: 15px;
+
+}
+
+.horizontal {
+    height: 10px;
+    background: #626161;
+}
+
+
+/* section first */
+.first {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 63vw;
+    margin: auto;
+    /* margin-left: 13.5vw;
+    margin-right: 13.5vw; */
+
+}
+
+.sectionImg {
+    /* border: 1px solid #b81313; */
+    position: relative;
+
+}
+
+.sectionImg img {
+    position: relative;
+    width: 550px;
+    z-index: 1;
+
+}
+
+
+.sectionImg video {
+    position: absolute;
+    top: 64px;
+    right: 10px;
+
+
+}
+
+.tv{
+    display: flex;
+    flex-direction: column;
+}
+.span1{
+    font-size: 48px;
+    font-weight: 900;
+}
+.span2{
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+
+
+.second {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 63vw;
+    margin: auto;
+    flex-direction: row-reverse;
+    
+
+}
+
+
+.sectionImg2 {
+    /* border: 1px solid #b81313; */
+    position: relative;
+
+}
+
+.sectionImg2 img {
+    position: relative;
+    width: 550px;
+    z-index: 1;
+}
+
+
+.sectionImg2 video {
+    position: absolute;
+    width: 55px;
+}
+
+
+
+
+.third{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 63vw;
+    margin: auto;
+}
+
+.sectionImg3 img {
+    width: 500px
+}
+.four{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    max-width: 63vw;
+    margin: auto;
+}
+.sectionImg4 img {
+    width: 500px
+}
+
+
+
+
+      body {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+      }
+
+      .faq-section {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .faq-section h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .faq-item {
+        background-color: #333;
+        margin-bottom: 10px;
+        padding: 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s ease;
+      }
+
+      .faq-item:hover {
+        background-color: #444;
+      }
+
+      .faq-answer {
+        display: none;
+        background-color: #222;
+        padding: 15px 20px;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .faq-footer {
+        text-align: center;
+        margin-top: 40px;
+        border-top: 1px solid #666;
+        padding-top: 20px;
+        font-size: 0.9rem;
+        color: #ccc;
+      }
+
+      .faq-footer a {
+        color: #ccc;
+        text-decoration: none;
+        margin: 0 10px;
+        display: inline-block;
+      }
+
+      .faq-footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        .faq-item {
+          font-size: 1rem;
+          padding: 15px;
+        }
+
+        .faq-answer {
+          font-size: 0.95rem;
+        }
+      }
+       .faq-footer {
+        margin-top: 60px;
+        border-top: 1px solid #444;
+        padding: 30px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        font-size: 0.9rem;
+        color: #ccc;
+      }
+
+      .faq-footer a {
+        color: #ccc;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .faq-footer a:hover {
+        text-decoration: underline;
+      }
+
+     
+
